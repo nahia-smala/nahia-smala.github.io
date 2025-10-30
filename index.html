@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NAHÏA — Site en construction</title>
+  <meta name="description" content="NAHÏA — Association française qui relie ici et là-bas. Site en construction. Rejoignez la liste d’information et contactez-nous." />
+  <meta name="theme-color" content="#38B6FF" />
+  <meta property="og:title" content="NAHÏA — Site en construction" />
+  <meta property="og:description" content="Le lien entre ici et là-bas. NAHÏA soutient IHSSANE et tisse les coopérations utiles." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bleu:#38B6FF;--gris:#737373;--blanc:#fff;--violet:#CB6CE6}
+    html,body{height:100%}
+    body{margin:0;font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";color:#222;background:#fff;line-height:1.5}
+    .wrap{min-height:100%;display:flex;flex-direction:column}
+    header{padding:24px 20px}
+    .container{max-width:960px;margin:0 auto;padding:0 20px}
+    .logo{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--gris);text-decoration:none}
+    .logo-mark{width:28px;height:28px;border:2px solid var(--bleu);border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;color:var(--bleu)}
+    main{flex:1}
+    .hero{padding:72px 0}
+    .badge{display:inline-block;background:rgba(56,182,255,.12);color:var(--bleu);border:1px solid rgba(56,182,255,.45);padding:6px 10px;border-radius:999px;font-size:14px;font-weight:600}
+    h1{font-size:clamp(32px,6vw,56px);margin:16px 0 10px;letter-spacing:-.02em}
+    .lead{font-size:clamp(18px,2.8vw,22px);color:#444;max-width:48ch}
+    .panel{margin-top:28px;background:#fafafa;border:1px solid #eee;border-radius:20px;padding:22px}
+    form{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    input[type=email]{flex:1;min-width:220px;padding:14px 16px;border-radius:12px;border:1px solid #ddd;font-size:16px}
+    button{padding:14px 18px;border-radius:12px;border:none;background:var(--bleu);color:#fff;font-weight:700;font-size:16px;cursor:pointer}
+    button:focus,button:hover{filter:brightness(.95)}
+    .grid{display:grid;gap:16px;margin-top:30px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{border:1px solid #eee;border-radius:16px;padding:18px;background:#fff}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .muted{color:#666}
+    .contact{margin-top:18px}
+    .contact a{color:var(--bleu);text-decoration:none}
+    footer{padding:28px 20px;border-top:1px solid #eee;color:#666}
+    .legal{display:flex;gap:18px;flex-wrap:wrap}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid #eee;background:#fff;color:#555}
+    .tagline{color:var(--gris);font-weight:600}
+    .accent{color:var(--bleu)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media (max-width:600px){header img{height:36px;}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+        <a class="logo" href="#" aria-label="NAHÏA">
+          <span class="logo-mark">ن</span>
+          <span>NAHÏA</span>
+        </a>
+        <img src="logo-nahia.png" alt="Logo NAHÏA" style="height:48px;width:auto;">
+      </div>
+    </header>
+
+    <main>
+      <section class="container hero" aria-labelledby="titre">
+        <span class="badge">Site en construction</span>
+        <h1 id="titre">Le lien entre ici et là-bas<span class="accent">.</span></h1>
+        <p class="lead">NAHÏA est l’association française qui soutient le projet IHSSANE : sensibilisation, plaidoyer, financement et transmission. <strong class="tagline">Tout commence par toi.</strong></p>
+
+        <div class="panel" role="region" aria-label="Inscription à la liste d’informations">
+          <p style="margin:0 0 8px" class="muted">Lancement très bientôt. Laisse ton email pour être prévenu·e :</p>
+          <form method="post" action="https://example.com/your-form-endpoint">
+            <label class="sr-only" for="email">Votre email</label>
+            <input id="email" type="email" name="email" placeholder="Votre email" required autocomplete="email" />
+            <button type="submit">Me prévenir</button>
+          </form>
+          <p class="muted" style="margin-top:8px;font-size:14px">Aucun cookie, aucun suivi. Vos données ne servent qu’à vous informer de l’ouverture et des actions de NAHÏA.</p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Ce que nous préparons</h3>
+            <p class="muted">Collecte et tri solidaires, revalorisation des matières, distribution d’objets utiles (fournitures scolaires, hygiène bucco‑dentaire), ateliers d’éducation au tri.</p>
+          </div>
+          <div class="card">
+            <h3>Où va votre don</h3>
+            <p class="muted">Matériel de collecte, rémunération des collecteurs, outillage de tri, fabrication locale d’objets, actions pédagogiques dans les écoles.</p>
+          </div>
+          <div class="card">
+            <h3>Soutenir IHSSANE</h3>
+            <p class="muted">NAHÏA tisse le lien et mobilise des partenaires pour IHSSANE au Maroc. Un même élan, des rôles complémentaires.</p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <p class="muted">Un partenariat, une subvention, une idée ? Écrivez‑nous : <a href="mailto:contact@nahia-smala.org">contact@nahia-smala.org</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="legal">
+          <span class="pill">© <span id="y"></span> NAHÏA</span>
+          <a class="pill" href="#" aria-label="Mentions légales">Mentions légales</a>
+          <a class="pill" href="#" aria-label="Politique de confidentialité">Confidentialité</a>
+          <a class="pill" href="#" aria-label="Contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
