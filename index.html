@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NAHÏA — L'écologie au service de l'humain</title>
 <meta name="description" content="NAHÏA, association loi 1901 en Savoie, agit en France et à Zagora au Maroc : collecte et tri des déchets plastiques, ateliers pédagogiques, redistribution d'objets utiles aux habitants.">
+<link rel="canonical" href="https://nahia-smala.org/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NAHÏA — L'écologie au service de l'humain">
+<meta property="og:description" content="Une association qui agit en Savoie et à Zagora pour valoriser les déchets et soutenir les habitants.">
+<meta property="og:url" content="https://nahia-smala.org/">
+<meta property="og:image" content="https://nahia-smala.org/hero-cycle.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="./favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,11 +24,17 @@
   .skip-link{position:absolute;left:16px;top:-60px;z-index:100;color:#123A4D;background:#F7F4EE;padding:12px 16px;font-weight:700;}
   .skip-link:focus{top:16px;}
   .ha-widget{width:100%;min-height:720px;border:0;display:block;background:#FBFDFF;}
+  .embed-placeholder{width:100%;min-height:280px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px;text-align:center;background:#FCFAF6;color:#123A4D;border:1px solid rgba(18,58,77,0.16);}
+  .embed-placeholder--widget{min-height:720px;}
+  .embed-placeholder p{max-width:44ch;line-height:1.55;margin:0;}
+  .embed-placeholder button{appearance:none;border:0;background:#2E7FB0;color:#FBFDFF;padding:14px 22px;font:inherit;font-weight:700;cursor:pointer;}
+  .embed-placeholder button:hover{background:#256B96;}
+  .embed-placeholder button:focus-visible{outline:3px solid #FF66C4;outline-offset:4px;}
   @media (max-width:720px){
     header{position:relative!important;justify-content:center!important;padding:14px 20px!important;}
     header nav{justify-content:center!important;gap:12px 18px!important;}
     header nav a{font-size:13px!important;}
-    .ha-widget{min-height:760px;}
+    .ha-widget,.embed-placeholder--widget{min-height:760px;}
   }
   ::selection{background:rgba(184,92,56,0.22);}
 </style>
@@ -118,7 +132,10 @@
         </div>
       </div>
       <div style="border:1px solid rgba(247,244,238,0.16);aspect-ratio:4/3;min-height:280px;">
-        <iframe title="Carte de Zagora, Maroc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53000!2d-5.8369!3d30.3294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb43c1ef0505c37%3A0x6c4742f8a3c0c7a0!2sZagora%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1680000000000!5m2!1sfr!2sfr" style="width:100%;height:100%;border:0;filter:grayscale(0.25);" loading="lazy"></iframe>
+        <div class="embed-placeholder" data-embed-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53000!2d-5.8369!3d30.3294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb43c1ef0505c37%3A0x6c4742f8a3c0c7a0!2sZagora%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1680000000000!5m2!1sfr!2sfr" data-embed-title="Carte de Zagora, Maroc" data-embed-kind="map">
+          <p>La carte est fournie par Google Maps. Son affichage peut entraîner le traitement de données par Google.</p>
+          <button type="button">Afficher la carte</button>
+        </div>
       </div>
     </div>
   </section>
@@ -222,7 +239,10 @@
           <img src="./soiree-couscous-flyer.png" alt="Affiche de la soirée couscous, samedi 10 octobre 2026, salle des fêtes de La Chapelle-Blanche dès 18 h 00" style="width:100%;height:auto;display:block;align-self:flex-start;">
         </div>
         <div style="flex:3 1 340px;background:#FBFDFF;display:flex;">
-          <iframe id="haWidgetCouscous" class="ha-widget" allowtransparency="true" allow="payment" scrolling="auto" title="Billetterie soirée couscous" src="https://www.helloasso.com/associations/nahia/boutiques/soiree-couscous-10-octobre-2026-salle-des-fetes-de-la-chapelle-blanche/widget"></iframe>
+          <div class="embed-placeholder embed-placeholder--widget" data-embed-src="https://www.helloasso.com/associations/nahia/boutiques/soiree-couscous-10-octobre-2026-salle-des-fetes-de-la-chapelle-blanche/widget" data-embed-title="Billetterie soirée couscous" data-embed-id="haWidgetCouscous">
+            <p>La billetterie est fournie par HelloAsso. Son affichage peut entraîner le traitement de données par HelloAsso.</p>
+            <button type="button">Afficher la billetterie</button>
+          </div>
         </div>
       </div>
     </div>
@@ -281,7 +301,10 @@
   <section id="soutenir" style="padding:clamp(64px,8vw,104px) clamp(20px,5vw,64px);background:#2E7FB0;color:#FBFDFF;">
     <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(36px,5vw,72px);align-items:start;">
       <div>
-        <iframe id="haWidgetLight" class="ha-widget" allowtransparency="true" allow="payment" scrolling="auto" title="Formulaire de don NAHÏA" src="https://www.helloasso.com/associations/nahia/formulaires/3/widget?view=form"></iframe>
+        <div class="embed-placeholder embed-placeholder--widget" data-embed-src="https://www.helloasso.com/associations/nahia/formulaires/3/widget?view=form" data-embed-title="Formulaire de don NAHÏA" data-embed-id="haWidgetLight">
+          <p>Le formulaire de don est fourni par HelloAsso. Son affichage peut entraîner le traitement de données par HelloAsso.</p>
+          <button type="button">Afficher le formulaire de don</button>
+        </div>
       </div>
       <div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
@@ -379,6 +402,27 @@
 
 </div>
 <script>
+  document.querySelectorAll('.embed-placeholder').forEach(function (placeholder) {
+    placeholder.querySelector('button').addEventListener('click', function () {
+      var iframe = document.createElement('iframe');
+      iframe.src = placeholder.dataset.embedSrc;
+      iframe.title = placeholder.dataset.embedTitle;
+      iframe.loading = 'lazy';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.border = '0';
+      if (placeholder.dataset.embedKind === 'map') {
+        iframe.style.minHeight = '280px';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      } else {
+        iframe.id = placeholder.dataset.embedId;
+        iframe.className = 'ha-widget';
+        iframe.allow = 'payment';
+        iframe.scrolling = 'auto';
+      }
+      placeholder.replaceWith(iframe);
+    });
+  });
   window.addEventListener('message', function (event) {
     if (event.origin !== 'https://www.helloasso.com' || !event.data || typeof event.data.height !== 'number') return;
     var widgets = [document.getElementById('haWidgetCouscous'), document.getElementById('haWidgetLight')];
